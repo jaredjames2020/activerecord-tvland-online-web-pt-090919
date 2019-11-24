@@ -5,8 +5,10 @@ class Show < ActiveRecord::Base
   
   
   def actors_list
-      binding.pry
-self.actors.map do |list_names|
+      # binding.pry
+    self.actors.map do |list_names|
+      list_names.first_name + " " + list_names.last_name
+    end
   end
 
 end
