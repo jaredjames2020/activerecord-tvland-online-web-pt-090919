@@ -6,7 +6,7 @@ class Show < ActiveRecord::Base
   
   def actors_list
       binding.pry
-
+self.actors.map do |list_names|
   end
 
 end
